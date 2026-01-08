@@ -1,0 +1,2 @@
+# OCR-Driven-Deep-Learning-for-Non-Invasive-Thalassemia-Detection
+This work presents a non-invasive, end-to-end thalassemia screening framework that converts CBC report images into diagnostic predictions by automatically extracting hematological parameters using OCR and classifying individuals as normal, silent carriers, or affected through a 1D CNN, eliminating the need for manual data entry or invasive testing.
