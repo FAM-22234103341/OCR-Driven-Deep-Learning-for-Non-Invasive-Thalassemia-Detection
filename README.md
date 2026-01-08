@@ -61,15 +61,15 @@ SHAP (SHapley Additive exPlanations)
 
 Result:
 Classification Report:
-               precision    recall  f1-score   support
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.88      | 0.81   | 0.85     | 64      |
+| 1     | 0.80      | 0.89   | 0.84     | 64      |
+| 2     | 0.97      | 0.92   | 0.94     | 64      |
+| 3     | 0.97      | 0.98   | 0.98     | 64      |
+| **Accuracy** |           |        | 0.90     | 256     |
+| **Macro Avg** | 0.91      | 0.90   | 0.90     | 256     |
+| **Weighted Avg** | 0.91      | 0.90   | 0.90     | 256     |
 
-           0       0.88      0.81      0.85        64
-           1       0.80      0.89      0.84        64
-           2       0.97      0.92      0.94        64
-           3       0.97      0.98      0.98        64
-
-    accuracy                           0.90       256
-   macro avg       0.91      0.90      0.90       256
-weighted avg       0.91      0.90      0.90       256
 
 This work was completed for research purposes and has been accepted for presentation at ICDAM 2026 and publication in IEEE Xplore Digital Library.
