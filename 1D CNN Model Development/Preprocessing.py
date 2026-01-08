@@ -53,3 +53,15 @@ train_df.to_csv("train_preprocessed_novel.csv", index=False)
 val_df.to_csv("val_preprocessed_novel.csv", index=False)
 
 print("Novel preprocessing complete: 'train_preprocessed_novel.csv' and 'val_preprocessed_novel.csv'")
+
+data = pd.read_csv("/content/train_preprocessed_novel.csv")
+
+# Quick look
+print(data.head())
+print(data['Group'].value_counts())
+
+data = pd.read_csv("/content/val_preprocessed_novel.csv")
+
+# Quick look
+print(data.head())
+print(data['Group'].value_counts())
