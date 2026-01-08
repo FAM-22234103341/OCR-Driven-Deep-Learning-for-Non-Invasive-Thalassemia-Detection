@@ -1,7 +1,7 @@
 # OCR-Driven-Deep-Learning-for-Non-Invasive-Thalassemia-Detection
 This work presents a non-invasive, end-to-end thalassemia screening framework that converts CBC report images into diagnostic predictions by automatically extracting hematological parameters using OCR and classifying individuals as normal, silent carriers, or affected through a 1D CNN, eliminating the need for manual data entry or invasive testing.
 
-Motivation
+**Motivation**
 
 1. Thalassemia is a genetic blood disorder that requires early detection.
 
@@ -11,7 +11,7 @@ Motivation
 
 4. Incorporating explainable AI ensures that predictions are transparent and clinically meaningful.
 
-Dataset
+**Dataset**
 
 The model is trained on a curated dataset of CBC blood parameters with corresponding thalassemia classification:
 | Class | Description       | Number of Samples |
@@ -21,19 +21,19 @@ The model is trained on a curated dataset of CBC blood parameters with correspon
 | 2     | Minor Thalassemia | 3,000+            |
 | 3     | Major Thalassemia | 3,000+            |
 
-Features used:
+**Features used:**
 
 Age, Hb, Hct, MCV, MCH, MCHC, RDW, RBC count, Sex, RDW_Hb_ratio
 
 Data is preprocessed and split into training and validation sets.
 
-1. OCR-based Feature Extraction
+1. **OCR-based Feature Extraction**
 
 Extract key blood parameters from CBC report images.
 
 Convert image text into structured numerical data for model input.
 
-2. 1D CNN Model
+2. **1D CNN Model**
 
 Input: 1D array of 11 blood features.
 
@@ -43,13 +43,13 @@ Loss: Categorical Crossentropy
 
 Optimizer: Adam (learning rate = 0.001)
 
-3. Model Training
+3. **Model Training**
 
 Training data reshaped for CNN: (samples, features, 1)
 
 Validation data used for performance evaluation.
 
-Explainable AI
+**Explainable AI**
 
 SHAP (SHapley Additive exPlanations)
 
@@ -59,7 +59,7 @@ SHAP (SHapley Additive exPlanations)
 
 3. Non-clinical features checked for bias.
 
-Result:
+**Result:**
 Classification Report:
 | Class | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
